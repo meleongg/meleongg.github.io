@@ -1,0 +1,284 @@
+/* 
+dark blue - #034488 
+blue - #178FD6
+light blue - #CCDDE8
+black - #333333
+white - #FFFFFF
+beige - #FFFAF7
+gray - #ECECEC
+charcoal - #36454F
+*/
+
+
+/* font-family: 'Nunito Sans', sans-serif; */
+
+body {
+    background-color: #ECECEC;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    color: #333;
+}
+
+.body-dark {
+    background-color: #333;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+b {
+    font-weight: 700;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.a-dark {
+    color: #fff;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #178FD6;
+}
+
+/* dark mode */
+.dark-mode {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    grid-column: 1 / -1;
+    font-weight: 20px;
+}
+
+#sun-moon {
+    padding: 30px 30px 0 0;
+}
+
+/* nav bar */
+main {
+    grid-column: 2 / 3;
+    display: grid;
+    row-gap: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 1.5;
+    padding-top: 20px;
+}
+
+.name {
+    padding: 8px;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.navbar-ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#dark-mode-btn {
+    font-size: 10px;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+}
+
+.tabs > * {
+    flex: 1;
+    color: #178FD6;
+}
+
+.section-tab:hover {
+    cursor: pointer
+}
+
+/* headshot */
+.headshot {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.headshot-photo {
+    max-width: 400px;
+}
+
+/* resume link */
+
+.resume-link {
+    padding: 10px 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px
+}
+ 
+/* about */
+.about {
+    background-color: #034488;
+    color: #FFFFFF;
+    padding: 14px 28px;
+    height: 100%;
+    border-radius: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text > *:not(:last-child) {
+    padding-bottom: 8px;
+}
+
+/* cards */
+.sec-title {
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.experiences, .ecs {
+    display: grid; 
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.card {
+    padding: 14px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 20px;
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 15px;
+}
+
+.card-dark {
+    background-color: #36454F;
+}
+
+/* cards */
+
+.card-content {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.card-about {
+    padding-top: 20px;
+}
+
+.card-about > *:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+.responsibilities > *:not(:last-child) {
+    padding-bottom: 5px;
+} 
+
+.responsibilities > * {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.co-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #034488;
+}
+
+.pos-name {
+    font-size: 16px;
+    color: #178FD6;
+    font-weight: 700;
+}
+
+.technologies {
+    display: flex;
+}
+
+.technologies > * {
+    background-color: #CCDDE8;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.technologies > *:not(:last-child) {
+    margin-right: 5px;
+}
+
+/* footer */
+footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links-ul {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-ul > * {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.link a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.link p {
+    padding: 0 4px;
+}
+
+.back-to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.back-to-top p {
+    padding: 0 4px;
+}
+
+.back-to-top:hover {
+    cursor: pointer;
+    transform: scale(1.1)
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
