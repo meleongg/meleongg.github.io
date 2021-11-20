@@ -170,10 +170,7 @@ main {
     background-color: #36454F;
 }
 
-/* cards */
-
 .card-content {
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -221,6 +218,11 @@ main {
 
 .technologies > *:not(:last-child) {
     margin-right: 5px;
+}
+
+/* project cards */
+.proj-card-content {
+    grid-column: 1 / -1;
 }
 
 /* footer */

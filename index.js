@@ -4,10 +4,11 @@ const rootElement = document.documentElement
 const homeBtn = document.getElementById('home-btn')
 const expBtn = document.getElementById('experience-btn')
 const ecsBtn = document.getElementById('ecs-btn')
-const comBtn = document.getElementById('community-btn')
+const projsBtn = document.getElementById('projects-btn')
 
 const expHeader = document.getElementById('experience-title')
 const ecsHeader = document.getElementById('ecs-title')
+const projsHeader = document.getElementById('projs-title')
 
 const darkModeBtn = document.getElementById('dark-mode-btn')
 const sunMoon = document.getElementById('sun-moon')
@@ -33,6 +34,10 @@ expBtn.addEventListener("click", () => {
 
 ecsBtn.addEventListener("click", () => {
     expHeader.scrollIntoView({ behavior: "smooth" })
+})
+
+projsBtn.addEventListener("click", () => {
+    projsHeader.scrollIntoView({ behavior: "smooth" })
 })
 
 darkModeBtn.addEventListener("click", () => {
