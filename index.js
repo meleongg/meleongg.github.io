@@ -53,6 +53,7 @@ darkModeBtn.addEventListener("click", () => {
         allCards[i].classList.toggle('card-dark');
     }
     allBody.classList.toggle('body-dark')
-    sunMoon.classList.toggle('fa-sun fa-moon');
+    sunMoon.classList.toggle('fa-sun');
+    sunMoon.classList.toggle('fa-moon');
 })
 
