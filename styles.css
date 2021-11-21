@@ -197,7 +197,7 @@ main {
 .co-name {
     font-size: 18px;
     font-weight: 700;
-    color: #034488;
+    color: #178FD6;
 }
 
 .pos-name {
@@ -214,6 +214,7 @@ main {
     background-color: #CCDDE8;
     border-radius: 5px;
     padding: 4px;
+    color: #333;
 }
 
 .technologies > *:not(:last-child) {
@@ -221,6 +222,20 @@ main {
 }
 
 /* project cards */
+.projs {
+    display: grid;
+    row-gap: 30px;
+}
+
+.projs-links {
+    display: flex;
+    color: #333;
+}
+
+.projs-links > *:not(:last-child) {
+    margin-right: 5px;
+}
+
 .proj-card-content {
     grid-column: 1 / -1;
 }

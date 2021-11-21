@@ -16,8 +16,6 @@ const allAnchors = document.getElementsByTagName('a')
 const allBody = document.getElementsByTagName('body')[0]
 const allCards = document.getElementsByClassName('card')
 
-let darkMode = false
-
 scrollToTop = () => {
     rootElement.scrollTo({
         top: 0,
@@ -40,6 +38,8 @@ projsBtn.addEventListener("click", () => {
     projsHeader.scrollIntoView({ behavior: "smooth" })
 })
 
+let darkMode = false
+
 darkModeBtn.addEventListener("click", () => {
     if (!darkMode) {
         darkMode = true
@@ -53,7 +53,6 @@ darkModeBtn.addEventListener("click", () => {
         allCards[i].classList.toggle('card-dark');
     }
     allBody.classList.toggle('body-dark')
-    sunMoon.classList.toggle('fa-sun');
-    sunMoon.classList.toggle('fa-moon');
+    sunMoon.classList.toggle('fa-sun fa-moon');
 })
 
