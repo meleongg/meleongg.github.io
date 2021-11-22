@@ -229,7 +229,7 @@ main {
 
 .projs-links {
     display: flex;
-    color: #333;
+    font-weight: 700;
 }
 
 .projs-links > *:not(:last-child) {

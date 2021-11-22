@@ -31,7 +31,7 @@ expBtn.addEventListener("click", () => {
 })
 
 ecsBtn.addEventListener("click", () => {
-    expHeader.scrollIntoView({ behavior: "smooth" })
+    ecsHeader.scrollIntoView({ behavior: "smooth" })
 })
 
 projsBtn.addEventListener("click", () => {
