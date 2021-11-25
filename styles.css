@@ -17,6 +17,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     color: #333;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .body-dark {
@@ -49,21 +50,30 @@ a:hover {
 }
 
 /* dark mode */
-.dark-mode {
+.menu {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     width: 100%;
     grid-column: 1 / -1;
     font-weight: 20px;
+    padding: 20px 20px 0 20px;
 }
 
-#sun-moon {
-    padding: 30px 30px 0 0;
+#hamburger-icon {
+    display: none; 
 }
 
 /* nav bar */
+
+/* top nav */
+#top-nav {
+    display: none;
+    color: #178FD6;
+    padding-left: 10px;
+}
+
 main {
     grid-column: 2 / 3;
     display: grid;
@@ -84,7 +94,7 @@ main {
     flex-direction: column;
     text-align: center;
 }
-
+ 
 #dark-mode-btn {
     font-size: 10px;
 }
@@ -99,7 +109,7 @@ main {
     color: #178FD6;
 }
 
-.section-tab:hover {
+.section-tab:hover, .experience-btn:hover, .ecs-btn:hover, .projects-btn:hover {
     cursor: pointer
 }
 
@@ -298,4 +308,29 @@ button, input[type="submit"], input[type="reset"] {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+}
+
+/* media queries */
+@media screen and (max-width: 480px) {
+    .tabs > * {
+        display: none;
+    }
+    #hamburger-icon {
+        display: block;
+    }
+    .technologies {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #top-nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #top-nav {
+        display: none;
+    }
 }
