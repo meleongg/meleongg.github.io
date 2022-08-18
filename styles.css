@@ -226,6 +226,7 @@ main {
     border-radius: 5px;
     padding: 4px;
     color: #333;
+    text-align: center;
 }
 
 .technologies > *:not(:last-child) {
